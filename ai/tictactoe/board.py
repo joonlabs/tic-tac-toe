@@ -1,6 +1,3 @@
-from ai.tictactoe.player import Player
-
-
 class Board(object):
     def __init__(self):
         self.size = 3

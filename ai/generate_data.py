@@ -1,8 +1,8 @@
 import sys
 import json
-from ai.tictactoe.board import Board
-from ai.tictactoe.game import Game
-from ai.tictactoe.player import Player, RandomPlayer, HumanPlayer
+from tictactoe.board import Board
+from tictactoe.game import Game
+from tictactoe.player import Player, RandomPlayer, HumanPlayer
 
 # number of games to play
 num_games = 10000
