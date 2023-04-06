@@ -60,3 +60,4 @@ ai/dataset.json
 
 # models
 model.h5
+ai/model.h5
