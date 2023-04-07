@@ -5,7 +5,7 @@ from tictactoe.game import Game
 from tictactoe.player import Player, RandomPlayer, HumanPlayer
 
 # number of games to play
-num_games = 10000
+num_games = 500000
 
 # create an empty dataset
 dataset = []
@@ -18,11 +18,16 @@ for i in range(num_games):
     # play the game
     game.play(verbose=False)
 
+    # if the game is a draw, skip it
+    if game.board.winner == 0:
+        continue
+
     # add the game to the dataset
-    dataset.append(game.to_training_data())
+    dataset.append(game.to_training_data(perspective_from_first_move=True))
+    dataset.append(game.to_training_data(perspective_from_first_move=False))
 
 # save the dataset to a json file
 with open("dataset.json", "w") as f:
     f.write(json.dumps(dataset))
 
-print("Successfully generated dataset with %d games!" % num_games)
+print("Successfully generated dataset with %d datapoints!" % len(dataset))
