@@ -13,7 +13,7 @@ A demo is available at https://dev.joonlabs.com/tic-tac-toe/.
 To train the AI, go into the `ai` folder and follow these steps:
 
 
-1. Generate rnadom training data using `generate_training_data.py`
+1. Generate random training data using `generate_training_data.py`
 2. Train the model using `train.py`
 
 This will produce a `model.h5` file (and some files for TensorflowJS) in the `models` folder which contain the trained model.
