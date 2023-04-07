@@ -1,9 +1,12 @@
 # Tic Tac Toe
 
-This repository contains a Tic Tac Toe game.
-It contains a simple AI that plays against the user.
+This repository contains a web based Tic Tac Toe game.
+It contains a simple AI trained with Tensorflow that plays against the user.
+
 The AI is a simple neural network that is trained using random moves.
 The game is written with Vue3 and Typescript.
+
+A demo is available at https://dev.joonlabs.com/tic-tac-toe/.
 
 ## Train the AI
 
